@@ -11,11 +11,10 @@ trainer:
   accumulate_grad_batches: 1
   gradient_clip_val: 1.0
   gradient_clip_algorithm: "norm"
-  max_steps: 1000
+  max_steps: 100000
   precision: 16-mixed
   limit_val_batches: 10
   val_check_interval: 500
-  max_epochs: 5
   log_every_n_steps: 100
 
 # Dataset Configuration
