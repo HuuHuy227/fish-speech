@@ -3,7 +3,7 @@ defaults:
   - _self_
 
 project: text2semantic_finetune_dual_ar
-max_length: 4096
+max_length: 1024
 pretrained_ckpt_path: checkpoints/fish-speech-1.4
 
 # Lightning Trainer
@@ -49,7 +49,7 @@ data:
   train_dataset: ${train_dataset}
   val_dataset: ${val_dataset}
   num_workers: 4
-  batch_size: 8
+  batch_size: 4
   tokenizer: ${tokenizer}
   max_length: ${max_length}
 
